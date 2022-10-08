@@ -1,10 +1,10 @@
-# Generated with JReleaser 1.2.0 at 2022-10-08T13:54:17.311799615Z
+# Generated with JReleaser 1.2.0 at 2022-10-08T14:01:38.541053881Z
 class RustJreleaser < Formula
   desc "A very, very simple Hello World application written in Rust"
   homepage ""
-  url "https://github.com/dirien/rust-jreleaser/releases/download/v0.1.0/rust-jreleaser-0.1.0-darwin-amd64.zip"
-  version "0.1.0"
-  sha256 "a29e543c276a41c85c57285a8c21dacfef84fb0ff2dbd74cf18b09c3d8f0222e"
+  url "https://github.com/dirien/rust-jreleaser/releases/download/v0.1.2/rust-jreleaser-0.1.2-darwin-amd64.zip"
+  version "0.1.2"
+  sha256 "f7563dfc907db81c88c1aa949d6c8bc93940cc5c06a76c8720fbefac74c74fb3"
   license "Apache-2.0"
 
 
@@ -15,6 +15,6 @@ class RustJreleaser < Formula
 
   test do
     output = shell_output("#{bin}/rust-jreleaser --version")
-    assert_match "0.1.0", output
+    assert_match "0.1.2", output
   end
 end
